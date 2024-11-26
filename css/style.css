@@ -6,12 +6,22 @@
 #num-random-two,
 #num-random-three,
 #num-random-four{
-  border: 2px solid aquamarine;
+  border: 2px solid rgb(0, 24, 245);
   border-radius: 50px;
-  background-color: rgba(128, 128, 128, 0.219);
+  background-color: rgb(162, 0, 255);
+  color: white;
 }
 
 .countdown-size{
 
   font-size: 8rem;
+}
+
+body{
+  background-color: rgba(238, 130, 238, 0.61);
+}
+
+button{
+  background-color: rgb(162, 0, 255) !important;
+  border: 2px solid rgb(0, 24, 245) !important;
 }
