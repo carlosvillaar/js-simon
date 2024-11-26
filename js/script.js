@@ -9,6 +9,7 @@ const button = document.getElementById('button');
 const containerRandom = document.getElementById('container-random');
 const containerForm = document.getElementById('container-form')
 const alert = document.getElementById('alert');
+const remember = document.querySelector('.remember');
 
 
 //Timer
@@ -17,10 +18,13 @@ const timer = setInterval(() => {
   countdown.innerHTML = counter--
   if (counter < 0) { 
     clearInterval(timer);
-    containerRandom.classList.add('hidden')
-    containerForm.classList.remove('hidden')
+    countdown.innerHTML = 'Tempo Scaduto!'
+    containerRandom.classList.add('hidden');
+    containerForm.classList.remove('hidden');
+    remember.classList.add('hidden');
   }
-}, 500);
+}, 1000);
+
 
 
 //Aggiungo i numeri random all'HTML e li pusho nell'array
