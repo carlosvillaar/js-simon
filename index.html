@@ -4,10 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css' integrity='sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ==' crossorigin='anonymous'/>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href=".//css/style.css">
   <title>Simon Says</title>
 </head>
 <body>
+  <header>
+    <h1 class="text-uppercase text-center py-5">simon says</h1>
+  </header>
+  <main>
+    <div>
+      <p class="countdown text-center fs-1 fw-bold">0</p>
+    </div>
+    <div id="container-random" class="container-sm text-center py-5">
+      <div class="row py-5">
+        <div class="col-3">
+          <p id="num-random-one"></p>
+        </div>
+        <div class="col-3">
+          <p id="num-random-two"></p>
+        </div>
+        <div class="col-3">
+          <p id="num-random-three"></p>
+        </div>
+        <div class="col-3">
+          <p id="num-random-four"></p>
+        </div>
+      </div>
+    </div>
+
+      <div id="container-form" class="container-sm text-center py-5 hidden"> 
+
+        <div class="row py-5">
+          <div id="myform">
+            <div class="row py-5">
+              <div class="col-3">
+                <label for="#" class="form-label" ></label>
+                <input id="num-one" type="number">
+              </div>
+              <div class="col-3">
+                <label for="#" class="form-label" ></label>
+                <input id="num-two" type="number">
+              </div>
+              <div class="col-3">
+                <label for="#" class="form-label" ></label>
+                <input id="num-three" type="number">
+              </div>
+              <div class="col-3">
+                <label for="#" class="form-label" ></label>
+                <input id="num-four" type="number">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button d-flex justify-content-center py-5">
+        <button type="submit" class="btn btn-primary btn-lg" id="button">Invia</button>
+      </div>
+      <div id="alert">
+      </div>
+  </main>
   <script src="./js/script.js"></script>
 </body>
 </html>
