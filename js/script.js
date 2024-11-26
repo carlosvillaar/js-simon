@@ -48,7 +48,7 @@ button.addEventListener('click', () => {
     alert.innerHTML = `<p style="color: green; padding-top: 20px;">Bravissimo, hai indovinato ${equalNumbers.length} numeri. I numeri indovinati sono ${equalNumbers}.</p>`
     
   }else if ((equalNumbers.length = 1)) {
-    alert.innerHTML = `<p style="color: orange; padding-top: 20px;">Poteva andare meglio, hai indovinato un numero. Il numero indovinato è ${equalNumbers}.</p>`
+    alert.innerHTML = `<p style="color: yellow; padding-top: 20px;">Poteva andare meglio, hai indovinato un numero. Il numero indovinato è ${equalNumbers}.</p>`
   }
 
   containerRandom.classList.remove('hidden')
